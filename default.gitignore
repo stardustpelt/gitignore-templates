@@ -1,0 +1,54 @@
+# OS-specific system files
+.DS_Store          # macOS
+Thumbs.db          # Windows
+Desktop.ini        # Windows
+*~                 # Linux backup files
+
+# Editors
+.vscode/           # VSCodium / VS Code workspace settings
+*.swp              # Vim swap files
+*.swo              # Vim swap files
+.history/          # Local editor history
+
+# Node.js / React / Vite / Tailwind / Web
+node_modules/      # Dependency packages
+dist/              # Production build output
+build/             # Vite / React build directory
+.next/             # Next.js build output
+.vite/             # Vite optimization cache
+.parcel-cache/     # Bundler caches
+npm-debug.log*     # npm logs
+
+# Python Core
+__pycache__/       # Bytecode cache
+*.py[cod]          # Compiled Python files
+*$py.class
+
+# Virtual Environments & Envs
+venv/              # Standard venv
+env/               # Alternative venv name
+ENV/               # Alternative venv name
+.env               # Environment secrets / local variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Django / FastAPI specific
+*.sqlite3          # Local SQLite databases
+db.sqlite3-journal
+media/             # User-uploaded media files
+staticfiles/       # Collected static files
+
+# Docker & Podman
+.dockerignore      # (Optional, but good to keep local overrides)
+docker-compose.override.yml  # Local dev docker overrides
+*.pid              # Container process IDs
+
+# GitHub Actions (Local Testing)
+.act/              # Local runner cache if using 'act'
+
+# Testing & Coverage Caches
+.pytest_cache/
+.coverage
+htmlcov/
